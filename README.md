@@ -24,6 +24,7 @@
 
 
 ## 線上測試 <img src="https://img.icons8.com/color/48/000000/test-partial-passed.png" weight="30" height="30"/>
-
+- 質化指標：根據與 mentor 的討論，自動推播提醒的內容要有投資幫助
+- 量化指標：自動推播提醒（非顧客自行設定）， 每分鐘不超過 10 次，每週至少一次
 
 <a href="https://icons8.com/icon/103935/development-skill">Development Skill icon by Icons8</a>
