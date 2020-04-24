@@ -20,7 +20,7 @@
 
 ## fugle api 資源 <img src="https://img.icons8.com/color/48/000000/service.png" weight="30" height="30"/> 
 > Python 套件： fugle-realtime
-每檔個股都可以提供下圖標籤內的資料 [提供資料](https://www.fugle.tw/ai/2884?p=580279215)
+每檔個股都可以 [提供資料](https://www.fugle.tw/ai/2884?p=580279215)
 
 
 ## 線上測試 <img src="https://img.icons8.com/color/48/000000/test-partial-passed.png" weight="30" height="30"/>
