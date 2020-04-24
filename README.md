@@ -1,6 +1,6 @@
 # 玉山證卷-fugleTrade-投資信鴿
 
-## 專案簡介
+## <img src="https://img.icons8.com/pastel-glyph/64/000000/pen-1.png" weight="30" height="30"/>專案簡介
 **針對玉山旗下兩個 app ([Fugle富果投資](https://play.google.com/store/apps/details?id=tw.fugle.android.app)、[玉山證券A+行動下單](https://play.google.com/store/apps/details?id=com.esun))，目前推波訊息功能主要是由用戶自己設定條件(如下圖)，所以玉山想發展自動化推波的功能，透過分析客戶行為，去偵測客戶喜好，自動化推波適合的內容給客戶，提升客戶體驗。相對來說，假如客戶收到有意思的資訊，就會點入查看，所以也會增加客戶使用 app 的頻率。**
 
 <div align=center><img width="400" height="300" src="https://i.imgur.com/6LMTpbt.png" alt="玉山證券A+行動下單 app 示意圖"/></div>
