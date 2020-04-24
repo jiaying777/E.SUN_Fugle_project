@@ -12,7 +12,7 @@
 ## 主要目標
 一檔股票在「特定條件或情境時」很「聰明」的找到適當的通知時機，⾃自動發出「特定內容」，能夠讓追蹤這檔股票的⽤用⼾戶，覺得這訊息對於他的投資有幫助，甚⾄至刺刺激股票交易的意願。
 
-## 技術使用  <img src="https://img.icons8.com/color/48/000000/development-skill.png"/>
+## <img src="https://img.icons8.com/color/48/000000/development-skill.png" weight="30" height="30"/>技術使用  
 
 
 - [ ] ChatBot
