@@ -14,7 +14,7 @@
 
 ## 技術使用
 
-<i class="fas fa-tools fa-spin"></i>
+
 
 - [ ] ChatBot
 - [ ] API
@@ -27,3 +27,37 @@
 對於⽤⼾追蹤的個股
 當重⼤大訊息發布、營收發布、財報發布，富
 果⼩小幫⼿手主動發訊通知⽤用⼾戶
+
+
+  <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+  <!-- custom styling for all icons -->
+  i.fas,
+  i.fab {
+    border: 1px solid red;
+  }
+
+  <!-- custom styling for specific icons -->
+  .fa-fish {
+    color: salmon;
+  }
+
+  .fa-frog {
+    color: green;
+  }
+
+  .fa-user-ninja.vanished {
+    opacity: 0.0;
+  }
+
+  .fa-facebook {
+    color: rgb(59, 91, 152);
+  }
+
+  <i class="fas fa-fish"></i>
+  <i class="fas fa-frog"></i>
+  <i class="fas fa-user-ninja vanished"></i>
+  <i class="fab fa-facebook"></i>
