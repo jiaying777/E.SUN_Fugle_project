@@ -12,8 +12,7 @@
 ## 主要目標
 一檔股票在「特定條件或情境時」很「聰明」的找到適當的通知時機，⾃自動發出「特定內容」，能夠讓追蹤這檔股票的⽤用⼾戶，覺得這訊息對於他的投資有幫助，甚⾄至刺刺激股票交易的意願。
 
-## 技術使用
-
+## 技術使用  <img src="https://img.icons8.com/color/48/000000/development-skill.png"/>
 
 
 - [ ] ChatBot
@@ -29,35 +28,4 @@
 果⼩小幫⼿手主動發訊通知⽤用⼾戶
 
 
-  <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
-  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-
-  <!-- custom styling for all icons -->
-  i.fas,
-  i.fab {
-    border: 1px solid red;
-  }
-
-  <!-- custom styling for specific icons -->
-  .fa-fish {
-    color: salmon;
-  }
-
-  .fa-frog {
-    color: green;
-  }
-
-  .fa-user-ninja.vanished {
-    opacity: 0.0;
-  }
-
-  .fa-facebook {
-    color: rgb(59, 91, 152);
-  }
-
-  <i class="fas fa-fish"></i>
-  <i class="fas fa-frog"></i>
-  <i class="fas fa-user-ninja vanished"></i>
-  <i class="fab fa-facebook"></i>
+<a href="https://icons8.com/icon/103935/development-skill">Development Skill icon by Icons8</a>
