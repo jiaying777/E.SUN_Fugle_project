@@ -12,7 +12,7 @@
 ## 主要目標 <img src="https://img.icons8.com/plasticine/100/000000/accuracy.png" weight="35" height="35"/> 
 一檔股票在「特定條件或情境時」很「聰明」的找到適當的通知時機，⾃自動發出「特定內容」，能夠讓追蹤這檔股票的⽤用⼾戶，覺得這訊息對於他的投資有幫助，甚⾄至刺刺激股票交易的意願。
 
-## <img src="https://img.icons8.com/color/48/000000/development-skill.png" weight="30" height="30"/> 技術使用  
+## 技術使用 <img src="https://img.icons8.com/color/48/000000/development-skill.png" weight="30" height="30"/> 
 
 
 - [ ] ChatBot
@@ -20,7 +20,7 @@
 - [ ] 機器學習
 - [ ] AB Test (進階)
 
-## <img src="https://img.icons8.com/color/48/000000/service.png" weight="30" height="30"/> fugle api 資源
+## fugle api 資源 <img src="https://img.icons8.com/color/48/000000/service.png" weight="30" height="30"/> 
 > Python 套件： fugle-realtime
 
 對於⽤⼾追蹤的個股
