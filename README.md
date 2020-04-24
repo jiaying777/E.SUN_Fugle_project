@@ -13,8 +13,6 @@
 一檔股票在「特定條件或情境時」很「聰明」的找到適當的通知時機，⾃自動發出「特定內容」，能夠讓追蹤這檔股票的⽤用⼾戶，覺得這訊息對於他的投資有幫助，甚⾄至刺刺激股票交易的意願。
 
 ## 技術使用 <img src="https://img.icons8.com/color/48/000000/development-skill.png" weight="30" height="30"/> 
-
-
 - [ ] ChatBot
 - [ ] API
 - [ ] 機器學習
@@ -22,10 +20,10 @@
 
 ## fugle api 資源 <img src="https://img.icons8.com/color/48/000000/service.png" weight="30" height="30"/> 
 > Python 套件： fugle-realtime
+每檔個股都可以提供下圖標籤內的資料 [提供資料](https://www.fugle.tw/ai/2884?p=580279215)
 
-對於⽤⼾追蹤的個股
-當重⼤大訊息發布、營收發布、財報發布，富
-果⼩小幫⼿手主動發訊通知⽤用⼾戶
+
+## 線上測試 <img src="https://img.icons8.com/color/48/000000/test-partial-passed.png" weight="30" height="30"/>
 
 
 <a href="https://icons8.com/icon/103935/development-skill">Development Skill icon by Icons8</a>
