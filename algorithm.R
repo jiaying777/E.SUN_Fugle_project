@@ -1,3 +1,4 @@
+library(dplyr)
 stock_data = read.csv('collected_data.csv')
 {
   data = stock_data[, c(1, 2)]
