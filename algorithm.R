@@ -1,6 +1,6 @@
 library(dplyr)
-stock_data = read.csv('collected_data.csv')
-{
+stock_data = read.csv('collected_data.csv') ##讀取整理好的檔案
+{ ##資料轉換與標準化
   data = stock_data[, c(1, 2)]
   data$Beta_scale = scale(stock_data$CAPM_Beta.一年)
   data$PE_transformed = (1/stock_data$本益比) / 0.84
@@ -13,7 +13,8 @@ stock_data = read.csv('collected_data.csv')
   data$調整淨值比 = scale(data$調整淨值比)
   data = data %>% na.omit()
   }
-
+##推薦演算法，分別為內積、夾角cos值、距離
+##x為以訂閱公司 y為瀏覽公司
 recommend = function(x, y = c()){
   subscribed_list = x
   checked_list = y
