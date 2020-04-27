@@ -40,13 +40,7 @@ recommend = function(x, y = c()){
   
   for(i in c(1 : nrow(data))){
     b = as.vector(data[i, c(3:6)])
-    result = sum(chara * b)
-    fit$result_inner_product[i] = result
-  }
-  
-  for(i in c(1 : nrow(data))){
-    b = as.vector(data[i, c(3:6)])
-    result = sum(chara * b) / (sum(chara^2) + sum(b^2))
+    result = sum(chara * b) / (sqrt(sum(chara^2)) * sqrt(sum(b^2)))
     fit$result_cos[i] = result
   }
   
