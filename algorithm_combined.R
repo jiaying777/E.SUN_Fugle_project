@@ -1,36 +1,8 @@
-{
-  rm(list = ls())
+
   library(dplyr)
   library(readxl)
   library(stringr)
-  setwd('C:/Users/USER/Desktop/金融科技-文字探勘與機器學習/data/')
-  
-  subscribed_data = read.csv('0319-0417_subscribe_wl.csv')
-  action_data = read.csv('0410-0416_user_history.csv', fileEncoding = 'utf-8')
-  for(i in c(1 : nrow(subscribed_data))){subscribed_data$try[i] = str_extract_all(subscribed_data$lists[i],"[0-9]+[0-9]")}
-
-  stock_data = read.csv('個股資訊.csv')
-  Beta = read.table('TEJ BETA.txt', sep = '\t', header = T)
-  Beta = Beta[, c(-3:-6, -8 : -10)]
-  ETF = read.table('ETF殖利率.txt', sep = '\t', header = T)
-  ETF = merge(ETF, Beta[, c(1, 3)], by = '證券代碼')
-  ETF$本益比 = 19
-  temp = read.table('ETF淨值比.txt', sep = '\t', header = T)
-  ETF = merge(ETF, temp[, c(1, 3)], by = '證券代碼')
-  
-  stock_data = merge(stock_data, Beta[, c(2, 3)], by = '證券名稱')
-  stock_data$本益比 = stock_data$本益比 %>% as.character()
-
-  
-  for(i in c(1:nrow(stock_data))){if(stock_data$本益比[i] == '-'){stock_data$本益比[i] = '0'}}
-  stock_data$本益比 = stock_data$本益比 %>% as.numeric()
-  stock_data = subset(stock_data, stock_data$殖利率 > 1 & stock_data$本益比 > 0)
-  stock_data = rbind(stock_data, ETF)
-  stock_data$殖利率 = (stock_data$殖利率 %>% as.character() )%>% as.numeric()
-  stock_data$股價淨值比 = (stock_data$股價淨值比 %>% as.character() )%>% as.numeric()
-  
-  rm(temp)
-  }
+  stock_data = read.csv('collected_data.csv')
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------##
 
 {
@@ -45,7 +17,7 @@
   data$yeild_transformed = scale(data$yeild_transformed)
   data$調整淨值比 = scale(data$調整淨值比)
   data = data %>% na.omit()
-  }
+}
 
 recommend = function(x, y = c()){
   subscribed_list = x
@@ -58,10 +30,10 @@ recommend = function(x, y = c()){
   }
   
   if(length(checked_list) != 0){
-  sample1 = subset(data, data$證券代碼 %in% checked_list)
-  
-  for(i in c(1 : nrow(sample1))){
-    c = c + as.vector(sample[i, c(3:6)])
+    sample1 = subset(data, data$證券代碼 %in% checked_list)
+    
+    for(i in c(1 : nrow(sample1))){
+      c = c + as.vector(sample1[i, c(3:6)])
     }
   }else{c = 0}
   
@@ -69,7 +41,7 @@ recommend = function(x, y = c()){
   else{chara = (a / nrow(sample)) * 0.7 + (c / nrow(sample1)) * 0.3}
   
   fit = data[, c(1, 2)]
-
+  
   
   for(i in c(1 : nrow(data))){
     b = as.vector(data[i, c(3:6)])
@@ -98,7 +70,7 @@ recommend = function(x, y = c()){
   for(i in c(1:nrow(data1))){if(stock_data$股價淨值比[i] >= 1){data1$PB_group[i] = 1}else{data1$PB_group[i] = 0}}
   
   data1$cluster = kmeans(data1[, c(3:6)], 16)$cluster
-  }
+}
 
 recommend_group = function(x, y = c()){
   subscribed_list = x
@@ -114,7 +86,7 @@ recommend_group = function(x, y = c()){
     sample1 = subset(data1, data1$證券代碼 %in% checked_list)
     
     for(i in c(1 : nrow(sample1))){
-      c = c + as.vector(sample[i, c(3:6)])
+      c = c + as.vector(sample1[i, c(3:6)])
     }
   }else{c = 0}
   
@@ -142,11 +114,13 @@ recommend_group = function(x, y = c()){
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------##
 
-{
-  x = c(subscribed_data$try[2055] %>% unlist())
-  result = recommend(x)
+customized = function(x){ 
+  a = subset(subscribed_data$try, subscribed_data$user_id == x) %>% unlist()
+  b = subset(search_record$symbolId, search_record$user_id == x) %>% as.character()
+  
+  result = recommend(a, b)
   test = result[order(result$result_distance, decreasing = T), ][c(1:50), ]
-  result1 = recommend_group(x)
+  result1 = recommend_group(a, b)
   test1 = result1[order(result1$result_distance, decreasing = T), ][c(1:50), ]
   
   match = subset(test$證券名稱, test$證券代碼 %in% test1$證券代碼) %>% as.data.frame()
@@ -156,4 +130,6 @@ recommend_group = function(x, y = c()){
   temp = subset(test$證券名稱, test$證券代碼 %in% test1$證券代碼) %>% as.data.frame()
   match = rbind(match, temp) %>% unique()
   rm(temp, test, test1)
+  return(match)
 }
+result = customized(1544)
