@@ -1,4 +1,4 @@
-
+##讀檔加部分資料轉換
   library(dplyr)
   library(readxl)
   library(stringr)
@@ -7,7 +7,7 @@
   subscribed_data = read.csv('0319-0417_subscribe_wl.csv')
   action_data = read.csv('0410-0416_user_history.csv', fileEncoding = 'utf-8')
   search_record = action_data[, c(4, 6)] %>% unique()
-  for(i in c(1 : nrow(subscribed_data))){subscribed_data$try[i] = str_extract_all(subscribed_data$lists[i],"[0-9]+[0-9]")}
+  for(i in c(1 : nrow(subscribed_data))){subscribed_data$try[i] = str_extract_all(subscribed_data$lists[i],"[0-9]+[0-9]")} ##分出公司代碼
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------##
 
