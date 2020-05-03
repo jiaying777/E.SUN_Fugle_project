@@ -12,6 +12,7 @@
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------##
 
 {
+  ##資料轉換
   data = stock_data[, c(1, 2)]
   data$Beta_scale = scale(stock_data$CAPM_Beta.一年)
   data$PE_transformed = (1/stock_data$本益比) / 0.84
@@ -19,12 +20,14 @@
   data$調整淨值比 = stock_data$股價淨值比 / (1+0.0084)
   data = subset(data, data$PE_transformed < 50)
   
+  ##資料標準化
   data$PE_transformed = scale(data$PE_transformed)
   data$yeild_transformed = scale(data$yeild_transformed)
   data$調整淨值比 = scale(data$調整淨值比)
   data = data %>% na.omit()
 }
 
+##推薦演算法
 recommend = function(x, y = c()){
   subscribed_list = x
   checked_list = y
@@ -35,6 +38,7 @@ recommend = function(x, y = c()){
     a = a + as.vector(sample[i, c(3:6)])
   }
   
+  ##藉由收藏名單和瀏覽紀錄來描述使用者的輪廓
   if(length(checked_list) != 0){
     sample1 = subset(data, data$證券代碼 %in% checked_list)
     
@@ -68,6 +72,7 @@ recommend = function(x, y = c()){
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------##
 
 {
+  ##另一種邏輯，作法基本相同
   data1 = stock_data[, c(1, 2)]
   
   for(i in c(1:nrow(data1))){if(stock_data$CAPM_Beta.一年[i] >= 1){data1$Beta_group[i] = 1}else{data1$Beta_group[i] = 0}}
@@ -120,6 +125,7 @@ recommend_group = function(x, y = c()){
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------##
 
+##融合以上結果最為最後推薦
 customized = function(x){ 
   a = subset(subscribed_data$try, subscribed_data$user_id == x) %>% unlist()
   b = subset(search_record$symbolId, search_record$user_id == x) %>% as.character()
