@@ -1,6 +1,14 @@
 # KMeans
 [股票分群code](https://github.com/jiaying777/E.SUN_Fugle_project/blob/master/KMeans/Kmeans.ipynb)<br>
-## 做法：
+
+## 資料
+上市上櫃股票：
+* 殖利率
+* 本益比
+* 淨值比
+* Beta
+
+## 做法
 ### 分群判斷
 
 * 手軸法：找出轉折處
