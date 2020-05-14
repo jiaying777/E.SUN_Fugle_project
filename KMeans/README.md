@@ -1,5 +1,6 @@
 # KMeans
 [股票分群code](https://github.com/jiaying777/E.SUN_Fugle_project/blob/master/KMeans/Kmeans.ipynb)<br>
+[股票分群結果.csv](https://github.com/jiaying777/E.SUN_Fugle_project/blob/master/KMeans/stock_kmesns.csv)
 
 ## 資料
 上市上櫃股票：
