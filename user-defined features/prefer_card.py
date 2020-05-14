@@ -23,20 +23,20 @@ for i in range(len(file_name)):
                     user_cardname[int(u_id)].append(val)
 
 #將資料存成json檔
-class NpEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, np.integer):
-            return int(obj)
-        elif isinstance(obj, np.floating):
-            return float(obj)
-        elif isinstance(obj, np.ndarray):
-            return obj.tolist()
-        else:
-            return super(NpEncoder, self).default(obj)
+# class NpEncoder(json.JSONEncoder):
+#     def default(self, obj):
+#         if isinstance(obj, np.integer):
+#             return int(obj)
+#         elif isinstance(obj, np.floating):
+#             return float(obj)
+#         elif isinstance(obj, np.ndarray):
+#             return obj.tolist()
+#         else:
+#             return super(NpEncoder, self).default(obj)
 
-json_views = json.dumps(user_cardname,cls=NpEncoder,separators=(',',':'),sort_keys=True)
-with open("/Users/jiaying/fugle/user_data/user_cardname.json","w") as f:
-    json.dump(json_views,f)
+# json_views = json.dumps(user_cardname,cls=NpEncoder,separators=(',',':'),sort_keys=True)
+# with open("/Users/jiaying/fugle/user_data/user_cardname.json","w") as f:
+#     json.dump(json_views,f)
     
 
 
