@@ -40,6 +40,7 @@ for i in range(len(file_name)):
     
 
 
+    
 #各面向卡片 
 #原始卡片
 original_card = ['股價K線','即時走勢','基本概況','基本資料','新聞','PTT批踢踢']
@@ -53,6 +54,8 @@ technical = ['股價K線','即時走勢','愛因斯坦圖','三多風向圖','�
 chip = ['法人買賣超','當日主力券商','集保分布','申報轉讓','董監持股','融資融券','近期主力券商','券商買賣集中度']
 #消息面
 info = ['重大訊息','新聞','PTT批踢踢','我的筆記','公開職缺數','搜尋熱度','聚財網社群','大盤新聞情緒']
+
+
 
 
 #計算各面向卡片次數與得分數
@@ -91,9 +94,36 @@ for uid in userid:
     
 user_score = pd.DataFrame.from_dict(score, orient='index')
 
+
+
 #找出使用者更喜歡什麼面相的資訊
+us = pd.DataFrame()
+us['技術'] = user_score['技術面'].apply(lambda x: x/len(technical))
+us['籌碼'] = user_score['籌碼面'].apply(lambda x: x/len(chip))
+us['消息'] = user_score['消息面'].apply(lambda x: x/len(info))
+
+def chose(_list):
+    _list = list(_list)
+    _list.sort()
+    card=['技術面','籌碼面','消息面']
+    if _list[-1] == _list[-2]:
+        if _list[-2] == _list[0]:
+            return card
+        return card[-2:]
+    return [card[-1]]
+
+user_score['prefer'] = user_score[['技術面','籌碼面','消息面']].apply(chose, axis=1)
+user_score['user_id'] = user_score.index
+user_score=user_score[['user_id','基本面','技術面','籌碼面','消息面','得分','prefer']]
+# user_score.to_csv('/Users/jiaying/fugle/user_data/user_score.csv',index=0)
 
 
+# 沒有瀏覽紀錄的人
+noviews = []
+for i in range(16556):
+    if i not in user_cardname.keys():
+        noviews.append(i)
 
-
-
+# txt = open('/Users/jiaying/fugle/user_data/noviews.txt','w');
+# txt.write(str(noviews));
+# txt.close();
