@@ -60,7 +60,7 @@ for uid in df_subscribe['user_id_y'].unique():
 
 df_subscribe_industry = pd.DataFrame.from_dict(subscribe_industry,orient='index',columns=industry_code)
 
-# 處理na＆算百分比
+# 處理na＆算權重百分比
 df_subscribe_industry = df_subscribe_industry.fillna(0)
 df_views_industry = df_views_industry.fillna(0)
 
