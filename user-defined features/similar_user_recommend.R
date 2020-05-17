@@ -8,7 +8,7 @@
   for(i in c(1 : nrow(subscribed_data))){subscribed_data$try[i] = str_extract_all(subscribed_data$lists[i],"[0-9]+[0-9]")}
   
   stock_data = read.csv('ultimate_stock_data.csv')
-  }#check if the code of 0050 is read as 50.
+  } #check if the code of 0050 is read as 50.
 
 { 
   similar1 = function(x){
@@ -20,7 +20,7 @@
     }
     result = subset(result, result$. != x)
     return(result[order(result$distance), ])
-  }#compute the similarity based on distance in weight_user_industry
+  } #compute the similarity based on distance in weight_user_industry
   
   similar_recommend = function(x, y = 10){
     temp = similar1(x)$.[c(1)] %>% unlist()
@@ -28,8 +28,8 @@
     answer = subset(stock_data[, c(1, 2)], stock_data$證券代碼 %in% result)
     if(nrow(answer) >= 30){return(answer[sample(1:nrow(answer), y, replace = F), ])}
     else{return(answer)}
-  }#if the companies in the nearest user's the subscribed list are too many, then sample 20 of them.
+  } #if the companies in the nearest user's the subscribed list are too many, then sample 10 of them. 10 is default and can be changed.
 }
 
-  xx = similar_recommend(10) ##input is user_id
+  xx = similar_recommend(10) #input is user_id
   
