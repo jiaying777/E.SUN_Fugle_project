@@ -14,7 +14,7 @@ def data_for_model(name:str, path:str):
         ##資料轉換
         data = stock_data[['證券名稱','證券代碼']]
         data['Beta_scale'] = stock_data['CAPM_Beta.一年']
-        data['PE_transformed'] = (1/stock_data['本益比'].values) / 0.84
+        data['PE_transformed'] = stock_data['本益比']
         data['yeild_transformed'] = stock_data['殖利率'].values / 0.84
         data['調整淨值比'] = stock_data['股價淨值比'].values / (1+0.0084)
         data = data.loc[data['PE_transformed'] < 50,:] # TODO 為什麼要 < 50，沒有資料符合

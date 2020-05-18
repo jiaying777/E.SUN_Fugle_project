@@ -2,16 +2,11 @@ import scipy
 import numpy as np
 
 # TODO 需要確認所有 distance  和 cos (未正規化) 時是否一樣，還有公式適用於甚麼情況??
-def distance(f, v):
-    '''一般兩點距離'''
-    assert len(f) == len(v), "len(feature) != len(vector)"
 
-    return sum(v * f)/(np.sqrt(sum(np.square(v))) * np.sqrt(sum(np.square(f))))
-
-def cosine_similarity_distance(f, v, norm=True):
+def cosine_similarity_distance(f, v, norm=False):
     """餘弦相似度"""
     assert len(f) == len(v), "len(feature) != len(vector)"
-    cos = np.dot(f, v)/(np.linalg.norm(f)*np.linalg.norm(v))
+    cos = (np.dot(f, v)/(np.linalg.norm(f)*np.linalg.norm(v)))*-1
 
     return 0.5 * cos + 0.5 if norm else cos  # 归一化到[0, 1]区间内
 
