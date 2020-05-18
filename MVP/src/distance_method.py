@@ -1,3 +1,5 @@
+__author__ = "yen-nan ho"
+
 import scipy
 import numpy as np
 
