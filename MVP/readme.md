@@ -31,10 +31,7 @@
 ## 相關網站
 - [參考網站](https://medium.com/@zaoldyeck/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%80%8E%E9%BA%BC%E6%89%93%E9%80%A0-telegram-bot-a7b539c3402a)
 - [telegram api](https://core.telegram.org/bots/api)
-## 需求
-- pip install telegram
-- pip install --upgrade python-telegram-bot
-- 
+
 ## Step 1 : 申請 telegram chatbot 
 這個 part 主要以建立新的 chatbot 為主，設定的化其實蠻人性化的，就自己研究吧。 
 1. 加入 BotFather 好友後，它會親切地問候，並告訴你他能為你提供什麼服務。
@@ -48,7 +45,7 @@
 
 ## Step 2: 建立 ngrok (這個部分程式已經自動化)
 1. 申請 bot ，\newbot -> bot 的名稱
-2. 下載 ngrok，丟到 fugle_telegram_chatbot 資料夾
+2. [下載 ngrok](https://ngrok.com/)，丟到此資料夾
 3. ngrok 認證帳號 (要先申請帳號)
     - 直接輸入: ngrok authtoken 1bkz30d7rjlKZHyBaxVDZeP9pmV_25LymVhvdzn7fhzf26FuN
 4. cd 到 fugle_telegram_chatbot ，輸入 ngrok http 5000
