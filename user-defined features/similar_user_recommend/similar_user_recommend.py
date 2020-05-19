@@ -32,8 +32,9 @@ class subscription_list_recommendation:
         
         output=[]
         subscribe_list = []
-        for i,j in zip(data['lists'],data_id1['lists']):
+        for i in data['lists']:
             output.extend(i)
+        for j in data_id1['lists']:
             subscribe_list.extend(j)
         output = list(set(output))
         for i in set(output)&set(subscribe_list):
