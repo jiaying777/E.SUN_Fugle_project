@@ -50,9 +50,9 @@ class subscription_list_recommendation:
         output = self.subscribed(id1, id2)
         if len(output) < 5:
             output1 = self.subscribed(id1,id6_10)
-        if len(output+output1) > 5:
-            return (output+output1)[:5]
-        return output+output1
+            if len(output+output1) > 5:
+                return (output+output1)[:5]
+        return output
     
 if __name__ == '__main__':
     recommendation = subscription_list_recommendation()
