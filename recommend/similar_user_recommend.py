@@ -11,7 +11,7 @@ class subscription_list_recommendation:
      
     def userid(self,user_id):
         '''
-        找出最相近的5個使用者，同時找最相近的6~10，避免最相近的5個使用者的訂閱清單重複性過高
+        找出最相近的5個使用者，同時找最相近的6~10，避免最相近的5個使用者的訂閱清單重複性過高。
         '''
         user_idx = self.weight_user_industry[self.weight_user_industry['user_id'] == user_id].index[0]
         X = self.weight_user_industry[self.weight_user_industry.columns[1:]]
