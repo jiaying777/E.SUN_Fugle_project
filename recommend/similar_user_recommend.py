@@ -24,7 +24,8 @@ class subscription_list_recommendation:
 
     def subscribed(self,id1,id2):
         '''
-        找出最相近的5個使用者清單，並篩選掉已訂閱的股票，並從剩下的訂閱中隨機挑選5檔股票推薦
+        找出最相近的5個使用者清單，並篩選掉已訂閱的股票，並從剩下的訂閱中隨機挑選1檔股票，
+        再找出訂閱中與此檔股票較相似的股票共同推薦，若是推薦不足5檔股票則從訂閱清單中隨機挑選補齊5檔。
         '''
         data_id1 = self.user_subscribed[self.user_subscribed['user_id_y'] == id1]
         data_id1['lists'] = data_id1['lists'].apply(lambda x: x[2:-2].split("', '"))      
@@ -68,6 +69,10 @@ class subscription_list_recommendation:
     
     
     def recommendation(self,user_id):
+        '''
+        如果最新進的5個人訂閱清單太過相似導致推薦不到5檔股票，則利用最相近的6~10用戶的訂閱清單補齊5檔推薦，
+        選擇推薦規則跟最相近的5個人相同，如果最後還是不足5檔，代表該使用者的瀏覽與訂閱資料過少，可以定義為沒有在使用的用戶。
+        '''
         id1, id2 ,id6_10= self.userid(user_id)
         output = self.subscribed(id1, id2)
         if len(output) < 5:
