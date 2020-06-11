@@ -7,6 +7,7 @@ class subscription_list_recommendation:
     def __init__(self):
         self.weight_user_industry = pd.read_csv('weight_user_industry.csv')
         self.user_subscribed = pd.read_csv('subscribe_wl.csv')
+        self.stock = pd.read_pickle('stock.pickle')
      
     def userid(self,user_id):
         '''
