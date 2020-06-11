@@ -16,7 +16,7 @@ class subscription_list_recommendation:
         X = self.weight_user_industry[self.weight_user_industry.columns[1:]]
         tree = KDTree(X, leaf_size=40)
         dist, ind = tree.query(X[user_idx:user_idx+1], k=11)
-        idx = df.loc[ind[0][1:],'user_id'].values
+        idx = self.weight_user_industry.loc[ind[0][1:],'user_id'].values
         id1_5 = idx[:5]
         id6_10 = idx[5:] 
         return user_id,id1_5,id6_10
