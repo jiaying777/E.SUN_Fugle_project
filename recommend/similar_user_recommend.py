@@ -44,7 +44,8 @@ class subscription_list_recommendation:
             
         if len(output) >= 5:
             stockid = sample(output,1)
-            if len(stockid)==1:
+            df_stockid = self.stock[self.stock['證券代碼'].isin(stockid)]
+            if len(stockid)==1 and len(df_stockid)==1:
                 df_stock = self.stock[self.stock['證券代碼'].isin(output)]
                 df_stock.reset_index(drop=True, inplace=True)
                 stock_idx = df_stock[df_stock['證券代碼'].isin(stockid)].index[0]
