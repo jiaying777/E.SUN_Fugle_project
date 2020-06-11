@@ -40,7 +40,26 @@ class subscription_list_recommendation:
         output = list(set(output))
         for i in set(output)&set(subscribe_list):
             output.remove(i)
+            
         if len(output) >= 5:
+            stockid = sample(output,1)
+            if len(stockid)==1:
+                df_stock = self.stock[self.stock['證券代碼'].isin(output)]
+                df_stock.reset_index(drop=True, inplace=True)
+                stock_idx = df_stock[df_stock['證券代碼'].isin(stockid)].index[0]
+                X = df_stock.loc[:,'殖利率':]
+                tree = KDTree(X, leaf_size=40)
+                if len(df_stock) >=6:
+                    dist, ind = tree.query(X[stock_idx:stock_idx+1], k=6)
+                    idx =df_stock.loc[ind[0][1:],'證券代碼'].values
+                    return idx
+                else:
+                    dist, ind = tree.query(X[stock_idx:stock_idx+1], k=(len(df_stock)+1))
+                    idx = df_stock.loc[ind[0][1:],'證券代碼'].values
+                    output.remove(idx)
+                    if len(output+idx) > 5:
+                        return idx+sample(output,5-len(idx))
+                    return idx+output
             return sample(output,5)
         else:
             return output
