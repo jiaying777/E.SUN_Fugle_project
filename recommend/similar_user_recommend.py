@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from random import sample
+from sklearn.neighbors import KDTree
 
 class subscription_list_recommendation:
     def __init__(self):
