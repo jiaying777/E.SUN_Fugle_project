@@ -11,14 +11,14 @@ class subscription_list_recommendation:
         '''
         找出最相近的5個使用者，同時找最相近的6~10，避免最相近的5個使用者的訂閱清單重複性過高
         '''
-        data_user = self.weight_user_industry.loc[user_id,'ETF':]
-        data = self.weight_user_industry.drop(user_id)
-        data['dist'] = data.loc[:,'ETF':].apply(lambda x: np.sqrt(np.sum(np.square(data_user - x))),axis=1)
-        data.sort_values(by='dist',inplace=True)
-        data=data.reset_index(drop=True)
-        id2 = data.loc[:4,:]['user_id'].values
-        id6_10 = data.loc[5:9,:]['user_id'].values
-        return user_id,id2,id6_10
+        user_idx = self.weight_user_industry[self.weight_user_industry['user_id'] == user_id].index[0]
+        X = self.weight_user_industry[self.weight_user_industry.columns[1:]]
+        tree = KDTree(X, leaf_size=40)
+        dist, ind = tree.query(X[user_idx:user_idx+1], k=11)
+        idx = df.loc[ind[0][1:],'user_id'].values
+        id1_5 = idx[:5]
+        id6_10 = idx[5:] 
+        return user_id,id1_5,id6_10
 
     def subscribed(self,id1,id2):
         '''
