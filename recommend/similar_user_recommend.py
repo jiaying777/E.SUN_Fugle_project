@@ -86,5 +86,5 @@ class subscription_list_recommendation:
     
 if __name__ == '__main__':
     recommendation = subscription_list_recommendation()
-    output = recommendation.recommendation(11)
+    output = recommendation.recommendation(1)
     print(output)
