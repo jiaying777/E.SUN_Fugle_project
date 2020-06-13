@@ -48,4 +48,5 @@ if __name__ == '__main__':
     '''
     Web = WebCrawler()
     output = Web.Crawler(123)
-    print(output)
+    print(output[0])
+    print(output[1])
