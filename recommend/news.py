@@ -47,9 +47,14 @@ if __name__ == '__main__':
     若是當天沒有新聞則回傳None
     '''
     Web = WebCrawler()
-    output = Web.Crawler(123)
+    output = Web.Crawler(user_id = 1783)
+    news = Web.stocknews(symbolId = 2330)
+    print('推薦新聞：')
     if len(output) != 0:
         print(output[0])
         print(output[1])
     else:
         print(output)
+    print('\n')
+    print('個股查詢新聞：')
+    print(news)
