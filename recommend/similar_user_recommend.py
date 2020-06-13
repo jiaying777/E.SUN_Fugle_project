@@ -84,7 +84,34 @@ class subscription_list_recommendation:
                 return output+sample(output1,5-len(output))
         return output
     
+    def recommend_list(self,id1,id2):
+        data_id1 = self.user_subscribed[self.user_subscribed['user_id_y'] == id1]  
+        data = self.user_subscribed[(self.user_subscribed['user_id_y'] == id2[0]) | (self.user_subscribed['user_id_y'] == id2[1]) | 
+                    (self.user_subscribed['user_id_y'] == id2[2]) | (self.user_subscribed['user_id_y'] == id2[3]) | (self.user_subscribed['user_id_y'] == id2[4])]
+        
+        output=[]
+        subscribe_list = []
+        for i in data['lists']:
+            output.extend(i)
+        for j in data_id1['lists']:
+            subscribe_list.extend(j)
+        output = output+subscribe_list
+        output = list(set(output))
+        return output
+    
+    def recommend_all_list(self,user_id):
+        try:
+            id1, id2 ,id6_10= self.userid(user_id)
+        except IndexError:
+            return
+        
+        output = self.recommend_list(id1, id2)
+        if len(output) == 0:
+            output = self.recommend_list(id1, id6_10)
+        return output
+        
+    
 if __name__ == '__main__':
     recommendation = subscription_list_recommendation()
-    output = recommendation.recommendation(1)
+    output = recommendation.recommendation(1234)
     print(output)
