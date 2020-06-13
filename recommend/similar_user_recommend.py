@@ -6,7 +6,7 @@ from sklearn.neighbors import KDTree
 class subscription_list_recommendation:
     def __init__(self):
         self.weight_user_industry = pd.read_csv('weight_user_industry.csv')
-        self.user_subscribed = pd.read_csv('subscribe_wl.csv')
+        self.user_subscribed = pd.read_pickle('subscribe.pickle')
         self.stock = pd.read_pickle('stock.pickle')
      
     def userid(self,user_id):
@@ -27,11 +27,9 @@ class subscription_list_recommendation:
         找出最相近的5個使用者清單，並篩選掉已訂閱的股票，並從剩下的訂閱中隨機挑選1檔股票，
         再找出訂閱中與此檔股票較相似的股票共同推薦，若是推薦不足5檔股票則從訂閱清單中隨機挑選補齊5檔。
         '''
-        data_id1 = self.user_subscribed[self.user_subscribed['user_id_y'] == id1]
-        data_id1['lists'] = data_id1['lists'].apply(lambda x: x[2:-2].split("', '"))      
+        data_id1 = self.user_subscribed[self.user_subscribed['user_id_y'] == id1]  
         data = self.user_subscribed[(self.user_subscribed['user_id_y'] == id2[0]) | (self.user_subscribed['user_id_y'] == id2[1]) | 
                     (self.user_subscribed['user_id_y'] == id2[2]) | (self.user_subscribed['user_id_y'] == id2[3]) | (self.user_subscribed['user_id_y'] == id2[4])]
-        data['lists'] = data['lists'].apply(lambda x: x[2:-2].split("', '"))
         
         output=[]
         subscribe_list = []
@@ -54,11 +52,11 @@ class subscription_list_recommendation:
                 tree = KDTree(X, leaf_size=40)
                 if len(df_stock) >=6:
                     dist, ind = tree.query(X[stock_idx:stock_idx+1], k=6)
-                    idx =df_stock.loc[ind[0][1:],'證券代碼'].values
+                    idx =list(df_stock.loc[ind[0][1:],'證券代碼'].values)
                     return idx
                 else:
                     dist, ind = tree.query(X[stock_idx:stock_idx+1], k=(len(df_stock)+1))
-                    idx = df_stock.loc[ind[0][1:],'證券代碼'].values
+                    idx = list(df_stock.loc[ind[0][1:],'證券代碼'].values)
                     output.remove(idx)
                     if len(output+idx) > 5:
                         return idx+sample(output,5-len(idx))
@@ -73,15 +71,20 @@ class subscription_list_recommendation:
         如果最新進的5個人訂閱清單太過相似導致推薦不到5檔股票，則利用最相近的6~10用戶的訂閱清單補齊5檔推薦，
         選擇推薦規則跟最相近的5個人相同，如果最後還是不足5檔，代表該使用者的瀏覽與訂閱資料過少，可以定義為沒有在使用的用戶。
         '''
-        id1, id2 ,id6_10= self.userid(user_id)
+        try:
+            id1, id2 ,id6_10= self.userid(user_id)
+        except IndexError:
+            return
         output = self.subscribed(id1, id2)
         if len(output) < 5:
             output1 = self.subscribed(id1,id6_10)
-            if len(output+output1) > 5:
+            if len(output+output1) >= 5:
+                for i in set(output)&set(output1):
+                    output1.remove(i)
                 return output+sample(output1,5-len(output))
         return output
     
 if __name__ == '__main__':
     recommendation = subscription_list_recommendation()
-    output = recommendation.recommendation(123)
+    output = recommendation.recommendation(11)
     print(output)
