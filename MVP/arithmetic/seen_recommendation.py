@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = "chia-ying wu"
 
 import pandas as pd

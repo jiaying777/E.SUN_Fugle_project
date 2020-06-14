@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = "yen-nan ho"
 
 import pandas as pd
@@ -24,12 +25,12 @@ class Model:
 
         
     def _check_data(self, path_dt:dict):
-        print('check file...')
+        # print('check file...')
         for key in path_dt:
             if os.path.isfile('_tmp_{}.pkl'.format(path_dt[key].replace('.csv',''))) == False:
                 data_helper.data_for_model(name=key, path=path_dt[key]) # stock_data_num、search_record、subscribed_data
-            print('file {} success !'.format(path_dt[key]))   
-        print('get ready!')
+            # print('file {} success !'.format(path_dt[key]))   
+        # print('get ready!')
 
     def get_user_data(self, uid:int):
         subscribed_data = self.subscribed_data.loc[self.subscribed_data.user_id==uid, 'lists'].to_list()
@@ -91,9 +92,9 @@ if __name__ == '__main__':
 
     result_rank_edc = stock_model_num.get_recommend(1544, rtype='stock_rank')
 
-    result_ls_cos = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'cosine')
-    result_ls_edc = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'euclidean')
-    result_ls_pear = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'pearsonr')
+    # result_ls_cos = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'cosine')
+    # result_ls_edc = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'euclidean')
+    # result_ls_pear = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'pearsonr')
 
-    result_ls_spear = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'spearmanr')
-    result_ls_ken = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'kendall')
+    # result_ls_spear = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'spearmanr')
+    # result_ls_ken = stock_model_num.get_recommend(1544, rtype='stock_distance', method = 'kendall')
