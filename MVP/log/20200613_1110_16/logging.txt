@@ -1,0 +1,468 @@
+2020-06-13 11:10:17,799 - pyngrok.process - INFO - ngrok process starting: 13120
+2020-06-13 11:10:19,082 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 11:10:23,368 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 11:10:23,422 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 11:10:43,329 - src.bot_agent - INFO - ========================================
+2020-06-13 11:10:43,329 - src.bot_agent - INFO - webhook - get message - /start
+2020-06-13 11:10:45,369 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:10:45] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:11:36,449 - src.bot_agent - INFO - ========================================
+2020-06-13 11:11:36,450 - src.bot_agent - INFO - webhook - get message - id 123
+2020-06-13 11:11:36,932 - src.bot_agent - ERROR - Update "{'update_id': 100568605, 'message': {'message_id': 235, 'date': 1592017896, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': 'id 123', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}, '_effective_message': {'message_id': 235, 'date': 1592017896, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': 'id 123', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}}" caused error "name 'name' is not defined"
+2020-06-13 11:11:37,424 - src.bot_agent - INFO - error_handler - get error
+2020-06-13 11:11:37,425 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:11:37] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:17:21,879 - src.bot_agent - INFO - ========================================
+2020-06-13 11:17:21,880 - src.bot_agent - INFO - webhook - get message - /tool
+2020-06-13 11:17:22,397 - src.bot_agent - INFO - tool_handler - get tool
+2020-06-13 11:17:22,398 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:17:22] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:17:29,357 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-1-1353a4239e10>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:17:29,364 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:17:29] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:17:32,045 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-1-1353a4239e10>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:17:32,047 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:17:32] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:17:36,515 - src.bot_agent - INFO - ========================================
+2020-06-13 11:17:36,516 - src.bot_agent - INFO - webhook - get message - /help
+2020-06-13 11:17:37,041 - src.bot_agent - INFO - help_handler - get help
+2020-06-13 11:17:37,042 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:17:37] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:17:37,656 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-1-1353a4239e10>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:17:37,657 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:17:37] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:17:46,357 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-1-1353a4239e10>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:17:46,359 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:17:46] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:18:00,795 - src.bot_agent - INFO - ========================================
+2020-06-13 11:18:00,795 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:18:01,287 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:18:01] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:18:03,048 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-1-1353a4239e10>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:18:03,051 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:18:03] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:18:13,444 - src.bot_agent - INFO - ========================================
+2020-06-13 11:18:13,444 - src.bot_agent - INFO - webhook - get message - id 134
+2020-06-13 11:18:13,930 - src.bot_agent - ERROR - Update "{'update_id': 100568610, 'message': {'message_id': 244, 'date': 1592018293, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': 'id 134', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}, '_effective_message': {'message_id': 244, 'date': 1592018293, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': 'id 134', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}}" caused error "name 'name' is not defined"
+2020-06-13 11:18:14,520 - src.bot_agent - INFO - error_handler - get error
+2020-06-13 11:18:14,521 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:18:14] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:21:48,705 - pyngrok.process - INFO - ngrok process starting: 12592
+2020-06-13 11:21:50,087 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 11:21:54,380 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 11:21:54,449 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 11:21:54,965 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-2-a11aafc8b887>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:21:54,968 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:21:54] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:21:55,582 - src.bot_agent - INFO - ========================================
+2020-06-13 11:21:55,583 - src.bot_agent - INFO - webhook - get message - /help
+2020-06-13 11:21:57,701 - src.bot_agent - INFO - help_handler - get help
+2020-06-13 11:21:57,702 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:21:57] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:21:58,313 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-2-a11aafc8b887>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:21:58,317 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:21:58] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:21:58,601 - src.bot_agent - INFO - ========================================
+2020-06-13 11:21:58,601 - src.bot_agent - INFO - webhook - get message - id 134
+2020-06-13 11:21:58,606 - src.bot_agent - INFO - ========================================
+2020-06-13 11:21:58,606 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:21:59,082 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:21:59,083 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:21:59] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:21:59,699 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:21:59,704 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:21:59] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:22:02,974 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-2-a11aafc8b887>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:22:02,976 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:02] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:22:11,594 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-2-a11aafc8b887>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:22:11,597 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:11] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:22:28,473 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-2-a11aafc8b887>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:22:28,476 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:28] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:22:33,719 - src.bot_agent - INFO - ========================================
+2020-06-13 11:22:33,719 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:22:34,441 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:34] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:22:38,335 - src.bot_agent - INFO - ========================================
+2020-06-13 11:22:38,335 - src.bot_agent - INFO - webhook - get message - /tool
+2020-06-13 11:22:38,920 - src.bot_agent - INFO - tool_handler - get tool
+2020-06-13 11:22:38,921 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:38] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:22:41,076 - src.bot_agent - INFO - ========================================
+2020-06-13 11:22:41,076 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:22:41,686 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:41] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:22:42,257 - src.bot_agent - INFO - ========================================
+2020-06-13 11:22:42,257 - src.bot_agent - INFO - webhook - get message - 1111
+2020-06-13 11:22:42,812 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:42] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:22:58,183 - src.bot_agent - INFO - ========================================
+2020-06-13 11:22:58,183 - src.bot_agent - INFO - webhook - get message - id 123
+2020-06-13 11:22:58,673 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:22:58,674 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:22:58] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:23:01,099 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-2-a11aafc8b887>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:23:01,101 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:23:01] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:23:03,905 - src.bot_agent - INFO - ========================================
+2020-06-13 11:23:03,906 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:23:04,493 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:23:04] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:23:05,746 - src.bot_agent - INFO - ========================================
+2020-06-13 11:23:05,747 - src.bot_agent - INFO - webhook - get message - id 2333
+2020-06-13 11:23:06,234 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:23:06,234 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:23:06] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:23:10,867 - src.bot_agent - INFO - ========================================
+2020-06-13 11:23:10,868 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:23:11,382 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:23:11] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:23:26,229 - src.bot_agent - INFO - ========================================
+2020-06-13 11:23:26,229 - src.bot_agent - INFO - webhook - get message - id 1522
+2020-06-13 11:23:26,742 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:23:26,744 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:23:26] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:24:01,864 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-2-a11aafc8b887>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:24:01,867 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:24:01] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:24:14,481 - src.bot_agent - INFO - ========================================
+2020-06-13 11:24:14,482 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:24:15,078 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:24:15] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:24:16,736 - src.bot_agent - INFO - ========================================
+2020-06-13 11:24:16,737 - src.bot_agent - INFO - webhook - get message - ·j´M¬ÛÃöªºªÑ²¼
+2020-06-13 11:24:17,221 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:24:17] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:43,805 - pyngrok.process - INFO - ngrok process starting: 18848
+2020-06-13 11:25:45,112 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 11:25:49,338 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 11:25:49,401 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 11:25:50,003 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-3-a295a1f27752>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:25:50,006 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:50] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:25:50,614 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:50,615 - src.bot_agent - INFO - webhook - get message - /help
+2020-06-13 11:25:52,689 - src.bot_agent - INFO - help_handler - get help
+2020-06-13 11:25:52,690 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:52] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:53,402 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-3-a295a1f27752>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:25:53,404 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:53] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:25:53,608 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,609 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:25:53,612 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,613 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:25:53,617 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,617 - src.bot_agent - INFO - webhook - get message - id 123
+2020-06-13 11:25:53,618 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:25:53,619 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:53] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:53,625 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,625 - src.bot_agent - INFO - webhook - get message - ·j´M¬ÛÃöªºªÑ²¼
+2020-06-13 11:25:53,628 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,629 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:25:53,634 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,635 - src.bot_agent - INFO - webhook - get message - /tool
+2020-06-13 11:25:53,637 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,638 - src.bot_agent - INFO - webhook - get message - id 123
+2020-06-13 11:25:53,638 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:25:53,640 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:53] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:53,644 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,644 - src.bot_agent - INFO - webhook - get message - id 1522
+2020-06-13 11:25:53,645 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:25:53,645 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:53] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:53,649 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,650 - src.bot_agent - INFO - webhook - get message - id 2333
+2020-06-13 11:25:53,650 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:25:53,651 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:53] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:53,816 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,816 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:25:53,820 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,820 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:25:53,826 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,826 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:25:53,831 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,831 - src.bot_agent - INFO - webhook - get message - id 134
+2020-06-13 11:25:53,831 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:25:53,832 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:53] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:53,836 - src.bot_agent - INFO - ========================================
+2020-06-13 11:25:53,836 - src.bot_agent - INFO - webhook - get message - 1111
+2020-06-13 11:25:54,200 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:54] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:54,999 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,004 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:55,148 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,154 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:55,156 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,157 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,163 - src.bot_agent - INFO - tool_handler - get tool
+2020-06-13 11:25:55,168 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:55,169 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:55,212 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,217 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:55,224 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,231 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:55,352 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,354 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:25:55,359 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:55,368 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:25:58,191 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-3-a295a1f27752>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:25:58,193 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:25:58] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:26:02,917 - src.bot_agent - INFO - ========================================
+2020-06-13 11:26:02,918 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:26:03,417 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:26:03] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:26:04,333 - src.bot_agent - INFO - ========================================
+2020-06-13 11:26:04,334 - src.bot_agent - INFO - webhook - get message - aaa
+2020-06-13 11:26:04,851 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:26:04] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:26:06,894 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-3-a295a1f27752>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:26:06,896 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:26:06] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:26:11,504 - src.bot_agent - INFO - ========================================
+2020-06-13 11:26:11,504 - src.bot_agent - INFO - webhook - get message - id 2222
+2020-06-13 11:26:11,505 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:26:11,506 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:26:11] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:26:23,514 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-3-a295a1f27752>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:26:23,517 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:26:23] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:26:32,598 - src.bot_agent - INFO - ========================================
+2020-06-13 11:26:32,598 - src.bot_agent - INFO - webhook - get message - id 154
+2020-06-13 11:26:32,599 - src.bot_agent - ERROR - new id false to add to database!:
+2020-06-13 11:26:32,600 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:26:32] "[37mPOST /hook HTTP/1.1[0m" 200 -

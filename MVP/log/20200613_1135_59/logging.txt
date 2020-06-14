@@ -1,0 +1,188 @@
+2020-06-13 11:36:01,227 - pyngrok.process - INFO - ngrok process starting: 19180
+2020-06-13 11:36:02,779 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 11:36:07,385 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 11:36:07,415 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 11:36:08,098 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-1-1d9a567a6228>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:36:08,108 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:08] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:36:08,732 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:08,732 - src.bot_agent - INFO - webhook - get message - /help
+2020-06-13 11:36:10,842 - src.bot_agent - INFO - help_handler - get help
+2020-06-13 11:36:10,843 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:10] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:11,473 - __main__ - ERROR - Exception on /hook [POST]
+Traceback (most recent call last):
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\aaron\anaconda3\envs\fintech\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "<ipython-input-1-1d9a567a6228>", line 78, in webhook_handler
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2020-06-13 11:36:11,475 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:11] "[35m[1mPOST /hook HTTP/1.1[0m" 500 -
+2020-06-13 11:36:11,762 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:11,762 - src.bot_agent - INFO - webhook - get message - id 134
+2020-06-13 11:36:11,765 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:11,766 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:36:11,772 - src.bot_agent - INFO - new id login:927509751 | userid:134 | user_name¦ó«Û«n
+2020-06-13 11:36:11,838 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:11,839 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:36:11,844 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:11,845 - src.bot_agent - INFO - webhook - get message - aaa
+2020-06-13 11:36:11,847 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:11,850 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:36:12,149 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:12,150 - src.bot_agent - INFO - webhook - get message - id 2222
+2020-06-13 11:36:12,178 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:12,191 - src.bot_agent - INFO - webhook - get message - id 154
+2020-06-13 11:36:12,211 - src.bot_agent - INFO - new id login:1021237984 | userid:2222 | user_name¨|½åªL
+2020-06-13 11:36:12,249 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:12,250 - src.bot_agent - INFO - webhook - get message - ·j´M¬ÛÃöªºªÑ²¼
+2020-06-13 11:36:12,312 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:12] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:12,314 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:12,333 - src.bot_agent - INFO - webhook - get message - id 2222
+2020-06-13 11:36:12,349 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:12,350 - src.bot_agent - INFO - webhook - get message - id 1522
+2020-06-13 11:36:20,237 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:20,259 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:36:22,547 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:22,572 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:22,619 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:22,627 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:22] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:22,659 - src.bot_agent - INFO - webhook - get message - id 1234
+2020-06-13 11:36:22,677 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:23,028 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:26,243 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:26] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:26,912 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:26] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:26,922 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:36:26,939 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:26,967 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:26,974 - src.bot_agent - INFO - webhook - get message - /tool
+2020-06-13 11:36:26,999 - src.bot_agent - INFO - webhook - get message - id 123
+2020-06-13 11:36:27,007 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:27,033 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:27,047 - src.bot_agent - INFO - webhook - get message - 1111
+2020-06-13 11:36:27,054 - src.bot_agent - INFO - webhook - get message - id 2333
+2020-06-13 11:36:27,061 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:27,068 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:27,069 - src.bot_agent - INFO - webhook - get message - id 123
+2020-06-13 11:36:27,071 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:36:27,075 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:27,081 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:36:27,085 - src.bot_agent - INFO - ========================================
+2020-06-13 11:36:27,088 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:36:27,495 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:27,497 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:27] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:27,506 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:27,508 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:27,529 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:27,531 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:27,565 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:27,567 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:27] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:27,575 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:27] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:27,582 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:27,625 - src.bot_agent - INFO - tool_handler - get tool
+2020-06-13 11:36:27,675 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:27] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:27,715 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:27] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:28,254 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:28,459 - src.bot_agent - INFO - reply_handler - reply - 1402
+2020-06-13 11:36:28,460 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:28] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:28,462 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:28,464 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:28,467 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:28,472 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:28,473 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:28] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:28,478 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:28,485 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:28,487 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:28] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:28,489 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:28] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:28,793 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:28,798 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:36:28,799 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:28] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:35,419 - src.bot_agent - INFO - reply_handler - reply - 102
+2834
+2892
+2308
+2542
+2020-06-13 11:36:35,420 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:35] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:40,607 - src.bot_agent - INFO - reply_handler - reply - 129
+6504
+9911
+8112
+3705
+2020-06-13 11:36:40,608 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:40] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:55,645 - src.bot_agent - INFO - reply_handler - reply - ¶WÂ×(2441)
+­^·~¹F(2356)
+¸àªY(6205)
+¥úÁp(5315)
+¸U¹F¥ú¹q(5220)
+2020-06-13 11:36:55,647 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:55] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:56,261 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:56,265 - src.bot_agent - INFO - reply_handler - reply - ¶WÂ×(2441)
+­^·~¹F(2356)
+¸àªY(6205)
+¥úÁp(5315)
+¸U¹F¥ú¹q(5220)
+2020-06-13 11:36:56,266 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:56] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:56,327 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:56,331 - src.bot_agent - INFO - reply_handler - reply - ¶WÂ×(2441)
+­^·~¹F(2356)
+¸àªY(6205)
+¥úÁp(5315)
+¸U¹F¥ú¹q(5220)
+2020-06-13 11:36:56,332 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:56] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:56,543 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:56,545 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: api.telegram.org
+2020-06-13 11:36:56,549 - src.bot_agent - INFO - reply_handler - reply - ¶WÂ×(2441)
+­^·~¹F(2356)
+¸àªY(6205)
+¥úÁp(5315)
+¸U¹F¥ú¹q(5220)
+2020-06-13 11:36:56,554 - src.bot_agent - INFO - reply_handler - reply - ¶WÂ×(2441)
+­^·~¹F(2356)
+¸àªY(6205)
+¥úÁp(5315)
+¸U¹F¥ú¹q(5220)
+2020-06-13 11:36:56,555 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:56] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:36:56,557 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:36:56] "[37mPOST /hook HTTP/1.1[0m" 200 -

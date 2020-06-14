@@ -1,0 +1,56 @@
+2020-06-13 13:03:34,914 - pyngrok.process - INFO - ngrok process starting: 15368
+2020-06-13 13:03:35,942 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 13:03:39,842 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 13:03:39,850 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 13:03:40,422 - src.bot_agent - INFO - ========================================
+2020-06-13 13:03:40,422 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 13:03:40,423 - src.bot_agent - ERROR - Update "{'update_id': 220994444, 'message': {'message_id': 35, 'date': 1592024049, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '±ÀÂËªÑ²¼', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}, '_effective_message': {'message_id': 35, 'date': 1592024049, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '±ÀÂËªÑ²¼', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}}" caused error "'NoneType' object is not subscriptable"
+2020-06-13 13:03:41,566 - src.bot_agent - INFO - error_handler - get error
+2020-06-13 13:03:41,566 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:03:41] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:03:42,188 - src.bot_agent - INFO - ========================================
+2020-06-13 13:03:42,189 - src.bot_agent - INFO - webhook - get message - 125
+2020-06-13 13:03:42,189 - src.bot_agent - ERROR - get stock info error
+2020-06-13 13:03:42,189 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:03:42] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:03:48,498 - src.bot_agent - INFO - ========================================
+2020-06-13 13:03:48,498 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 13:03:48,498 - src.bot_agent - ERROR - Update "{'update_id': 220994446, 'message': {'message_id': 38, 'date': 1592024628, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '±ÀÂËªÑ²¼', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}, '_effective_message': {'message_id': 38, 'date': 1592024628, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '±ÀÂËªÑ²¼', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}}" caused error "'NoneType' object is not subscriptable"
+2020-06-13 13:03:49,016 - src.bot_agent - INFO - error_handler - get error
+2020-06-13 13:03:49,016 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:03:49] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:03:51,248 - src.bot_agent - INFO - ========================================
+2020-06-13 13:03:51,249 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 13:03:51,249 - src.bot_agent - ERROR - Update "{'update_id': 220994447, 'message': {'message_id': 40, 'date': 1592024631, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '¨ä¥L¤H¤]³ßÅw', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}, '_effective_message': {'message_id': 40, 'date': 1592024631, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '¨ä¥L¤H¤]³ßÅw', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}}" caused error "'NoneType' object is not subscriptable"
+2020-06-13 13:03:51,729 - src.bot_agent - INFO - error_handler - get error
+2020-06-13 13:03:51,730 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:03:51] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:03:54,587 - src.bot_agent - INFO - ========================================
+2020-06-13 13:03:54,587 - src.bot_agent - INFO - webhook - get message - 1335
+2020-06-13 13:03:54,587 - src.bot_agent - ERROR - get stock info error
+2020-06-13 13:03:54,587 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:03:54] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:07:44,377 - pyngrok.process - INFO - ngrok process starting: 9608
+2020-06-13 13:07:45,334 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 13:07:48,835 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 13:07:48,848 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 13:08:01,016 - src.bot_agent - INFO - ========================================
+2020-06-13 13:08:01,017 - src.bot_agent - INFO - webhook - get message - /start
+2020-06-13 13:08:02,874 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:08:02] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:08:22,681 - src.bot_agent - INFO - ========================================
+2020-06-13 13:08:22,681 - src.bot_agent - INFO - webhook - get message - /help
+2020-06-13 13:08:23,219 - src.bot_agent - INFO - help_handler - get help
+2020-06-13 13:08:23,219 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:08:23] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:09:30,406 - src.bot_agent - INFO - ========================================
+2020-06-13 13:09:30,406 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 13:09:30,406 - src.bot_agent - ERROR - Update "{'update_id': 220994451, 'message': {'message_id': 47, 'date': 1592024970, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '±ÀÂËªÑ²¼', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}, '_effective_message': {'message_id': 47, 'date': 1592024970, 'chat': {'id': 927509751, 'type': 'private', 'first_name': '¦ó', 'last_name': '«Û«n'}, 'text': '±ÀÂËªÑ²¼', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 927509751, 'first_name': '¦ó', 'is_bot': False, 'last_name': '«Û«n', 'language_code': 'zh-hans'}}}" caused error "'NoneType' object is not subscriptable"
+2020-06-13 13:09:30,903 - src.bot_agent - INFO - error_handler - get error
+2020-06-13 13:09:30,904 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:09:30] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:09:45,021 - src.bot_agent - INFO - ========================================
+2020-06-13 13:09:45,021 - src.bot_agent - INFO - webhook - get message - /start
+2020-06-13 13:09:45,533 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:09:45] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:10:06,064 - src.bot_agent - INFO - ========================================
+2020-06-13 13:10:06,064 - src.bot_agent - INFO - webhook - get message - id 426
+2020-06-13 13:10:06,065 - src.bot_agent - ERROR - get stock info error
+2020-06-13 13:10:06,065 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:10:06] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 13:10:23,318 - src.bot_agent - INFO - ========================================
+2020-06-13 13:10:23,318 - src.bot_agent - INFO - webhook - get message - 541
+2020-06-13 13:10:23,318 - src.bot_agent - ERROR - get stock info error
+2020-06-13 13:10:23,318 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 13:10:23] "[37mPOST /hook HTTP/1.1[0m" 200 -

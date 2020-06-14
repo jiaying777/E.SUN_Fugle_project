@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = "yen-nan ho"
 
 import pandas as pd
@@ -19,7 +20,7 @@ def data_for_model(name:str, path:str):
         data['PE_transformed'] = stock_data['本益比']
         data['yeild_transformed'] = stock_data['殖利率'].values / 0.84
         data['調整淨值比'] = stock_data['股價淨值比'].values / (1+0.0084)
-        data = data.loc[data['PE_transformed'] < 50,:] # TODO 為什麼要 < 50，沒有資料符合
+        data = data.loc[data['PE_transformed'] < 50,:] 
     
         ##資料標準化
         for col in data.columns[2:]:

@@ -1,0 +1,114 @@
+2020-06-13 11:41:57,832 - pyngrok.process - INFO - ngrok process starting: 20076
+2020-06-13 11:41:59,149 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 11:42:05,370 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 11:42:05,431 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 11:42:09,588 - src.bot_agent - INFO - ========================================
+2020-06-13 11:42:09,588 - src.bot_agent - INFO - webhook - get message - /start
+2020-06-13 11:42:11,726 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:42:11] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:43:51,788 - pyngrok.process - INFO - ngrok process starting: 8104
+2020-06-13 11:43:53,049 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 11:43:57,509 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 11:43:57,525 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 11:45:20,566 - src.bot_agent - INFO - ========================================
+2020-06-13 11:45:20,566 - src.bot_agent - INFO - webhook - get message - /start
+2020-06-13 11:45:22,603 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:45:22] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:45:30,517 - src.bot_agent - INFO - ========================================
+2020-06-13 11:45:30,518 - src.bot_agent - INFO - webhook - get message - /help
+2020-06-13 11:45:31,020 - src.bot_agent - INFO - help_handler - get help
+2020-06-13 11:45:31,022 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:45:31] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:45:33,863 - src.bot_agent - INFO - ========================================
+2020-06-13 11:45:33,864 - src.bot_agent - INFO - webhook - get message - /help
+2020-06-13 11:45:34,484 - src.bot_agent - INFO - help_handler - get help
+2020-06-13 11:45:34,485 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:45:34] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:45:37,140 - src.bot_agent - INFO - ========================================
+2020-06-13 11:45:37,141 - src.bot_agent - INFO - webhook - get message - /tool
+2020-06-13 11:45:37,655 - src.bot_agent - INFO - tool_handler - get tool
+2020-06-13 11:45:37,656 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:45:37] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:45:39,803 - src.bot_agent - INFO - ========================================
+2020-06-13 11:45:39,804 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:45:47,895 - src.bot_agent - INFO - reply_handler - reply - ¶WÂ×(2441)
+­^·~¹F(2356)
+¸àªY(6205)
+¥úÁp(5315)
+¸U¹F¥ú¹q(5220)
+2020-06-13 11:45:47,896 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:45:47] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:45:51,886 - src.bot_agent - INFO - ========================================
+2020-06-13 11:45:51,886 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:45:54,103 - src.bot_agent - INFO - reply_handler - reply - 714
+1457
+2433
+4155
+1231
+2020-06-13 11:45:54,104 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:45:54] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:46:04,072 - src.bot_agent - INFO - ========================================
+2020-06-13 11:46:04,072 - src.bot_agent - INFO - webhook - get message - ·j´M¬ÛÃöªºªÑ²¼
+2020-06-13 11:46:18,684 - src.bot_agent - INFO - reply_handler - reply - 2231
+2020-06-13 11:46:18,686 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:46:18] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:49:01,228 - src.bot_agent - INFO - ========================================
+2020-06-13 11:49:01,228 - src.bot_agent - INFO - webhook - get message - adskf
+2020-06-13 11:49:01,742 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:49:01,744 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:49:01] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:49:07,054 - src.bot_agent - INFO - ========================================
+2020-06-13 11:49:07,055 - src.bot_agent - INFO - webhook - get message - id
+2020-06-13 11:49:07,588 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:49:07,589 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:49:07] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:49:44,601 - src.bot_agent - INFO - ========================================
+2020-06-13 11:49:44,602 - src.bot_agent - INFO - webhook - get message - ±ÀÂËªÑ²¼
+2020-06-13 11:49:52,946 - src.bot_agent - INFO - reply_handler - reply - ¶WÂ×(2441)
+­^·~¹F(2356)
+¸àªY(6205)
+¥úÁp(5315)
+¸U¹F¥ú¹q(5220)
+2020-06-13 11:49:52,947 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:49:52] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:54:05,971 - src.bot_agent - INFO - ========================================
+2020-06-13 11:54:05,971 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:54:08,332 - src.bot_agent - INFO - reply_handler - reply - 707
+8255
+1103
+1203
+3443
+2020-06-13 11:54:08,333 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:54:08] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:56:34,665 - src.bot_agent - INFO - ========================================
+2020-06-13 11:56:34,666 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:56:37,396 - src.bot_agent - INFO - reply_handler - reply - 784
+2061
+4714
+4147
+1457
+2020-06-13 11:56:37,397 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:56:37] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:58:05,792 - pyngrok.process - INFO - ngrok process starting: 16684
+2020-06-13 11:58:07,048 - pyngrok.process - INFO - ngrok process has started: http://127.0.0.1:4040
+2020-06-13 11:58:11,437 - src.bot_agent - INFO - reset webhook
+ {"ok":true,"result":true,"description":"Webhook was set"}
+2020-06-13 11:58:11,463 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-06-13 11:58:13,171 - src.bot_agent - INFO - ========================================
+2020-06-13 11:58:13,171 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:58:16,521 - src.bot_agent - INFO - reply_handler - reply - 1904
+9921
+2362
+2542
+2227
+2020-06-13 11:58:16,522 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:58:16] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:58:26,712 - src.bot_agent - INFO - ========================================
+2020-06-13 11:58:26,712 - src.bot_agent - INFO - webhook - get message - 123
+2020-06-13 11:58:27,180 - src.bot_agent - INFO - reply_handler - reply - ½Ð¿é¤J¥¿½T«ü¥O 
+1. /help 
+2. /tool
+2020-06-13 11:58:27,181 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:58:27] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:58:33,243 - src.bot_agent - INFO - ========================================
+2020-06-13 11:58:33,243 - src.bot_agent - INFO - webhook - get message - /start
+2020-06-13 11:58:34,547 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:58:34] "[37mPOST /hook HTTP/1.1[0m" 200 -
+2020-06-13 11:58:43,608 - src.bot_agent - INFO - ========================================
+2020-06-13 11:58:43,609 - src.bot_agent - INFO - webhook - get message - ¨ä¥L¤H¤]³ßÅw
+2020-06-13 11:58:46,376 - src.bot_agent - INFO - reply_handler - reply - 3231
+2308
+2892
+1101
+2886
+2020-06-13 11:58:46,377 - werkzeug - INFO - 127.0.0.1 - - [13/Jun/2020 11:58:46] "[37mPOST /hook HTTP/1.1[0m" 200 -
