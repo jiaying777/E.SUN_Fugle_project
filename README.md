@@ -7,6 +7,7 @@
   - [item-based](#item-based)
   - [user-based](#user-based)
   - [共現關係](#共現關係)
+  - [資料處理](#資料處理)
   
 
 
@@ -39,6 +40,9 @@
 
     1. 使用者特徵：使用者訂閱清單中的公司各比率的平均 * 0.7 + 使用者瀏覽紀錄中的公司各比率的平均 * 0.3 
     2. 找出與使用者特徵最相近的公司，並進行推薦
+    
+**KMeans**
+[KMeans](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/KMeans)：利用上述幾項比率將公司進行分群，但分群效果不好，所以最後不使用。
 
 ## user-based 
 根據訂閱資料與瀏覽紀律計算出使用者的產業喜好，找出相似喜好的使用者並將其之訂閱清單推薦給使用者。
@@ -50,7 +54,7 @@
 ## 共現關係
 整理出各股之間的共現關係，當使用者觀看任何一檔股票時進行推薦，亦即「看過的人也看過」。
 
-## 資料處理：
+## 資料處理
 **主要資料：**
 
     - 公司財務比率：TEJ 抓取
@@ -63,9 +67,9 @@
 處理後的資料有使用：
 [產業比例](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/Data_processing#2產業比例判斷使用者較常接觸的公司產業為何)、
 [股票共現](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/Data_processing#5股票共現關係被同一個使用者訂閱或是瀏覽)
+<br>
 
-處理後沒使用的資料：
-
+**處理後資料沒使用原因：原本想要將使用者分類，但使用者特徵過少，就算根據將一些特徵抽出來，分類效果也不盡人意，因此最後選擇不使用。**
 
 
 >[回目錄](#玉山證卷-fugleTrade-投資信鴿)
