@@ -41,7 +41,7 @@
     1. 使用者特徵：使用者訂閱清單中的公司各比率的平均 * 0.7 + 使用者瀏覽紀錄中的公司各比率的平均 * 0.3 
     2. 找出與使用者特徵最相近的公司，並進行推薦
     
-<div align=center><img src='https://github.com/jiaying777/other/blob/master/金科圖/1.png' width=70%><br><br>
+<div align=center><img src='https://github.com/jiaying777/other/blob/master/金科圖/1.png' width=70%></div><br><br>
   
 [**KMeans公司分群**](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/KMeans)
 ：利用上述幾項比率將公司進行分群，但分群效果不好，所以最後沒有使用。
@@ -53,7 +53,7 @@
     2. 利用 KD-Tree 計算出與其歐式距離最相近者
     3. 隨機挑選最相近使用者的訂閱清單中還未訂閱過的公司進行推薦
     
-<div align=center><img src='https://github.com/jiaying777/other/blob/master/金科圖/2.png' width=70%><br><br>
+<div align=center><img src='https://github.com/jiaying777/other/blob/master/金科圖/2.png' width=70%></div><br><br>
 
 ## 共現關係
 整理出各股之間的共現關係，當使用者觀看任何一檔股票時進行推薦，亦即「看過的人也看過」。
