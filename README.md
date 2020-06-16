@@ -54,7 +54,7 @@
     2. 利用 KD-Tree 計算出與其歐式距離最相近者
     3. 隨機挑選最相近使用者的訂閱清單中還未訂閱過的公司進行推薦
     4. 由於最近的使用者的訂閱清單可能過於相似，因此改成最相近的 5 個人
-    缺點：使用者資料不夠多，會影響推薦效果
+    缺點：如果使用者行為資料不夠多，會影響推薦效果
     
 <div align=center><img src='https://github.com/jiaying777/other/blob/master/金科圖/2.png' width=70%></div><br><br>
 
