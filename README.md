@@ -41,8 +41,8 @@
     1. 使用者特徵：使用者訂閱清單中的公司各比率的平均 * 0.7 + 使用者瀏覽紀錄中的公司各比率的平均 * 0.3 
     2. 找出與使用者特徵最相近的公司，並進行推薦
     
-**KMeans**
-[KMeans](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/KMeans)：利用上述幾項比率將公司進行分群，但分群效果不好，所以最後不使用。
+[**KMeans公司分群**](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/KMeans)
+：利用上述幾項比率將公司進行分群，但分群效果不好，所以最後沒有使用。
 
 ## user-based 
 根據訂閱資料與瀏覽紀律計算出使用者的產業喜好，找出相似喜好的使用者並將其之訂閱清單推薦給使用者。
