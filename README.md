@@ -50,6 +50,23 @@
 ## 共現關係
 整理出各股之間的共現關係，當使用者觀看任何一檔股票時進行推薦，亦即「看過的人也看過」。
 
+## 資料處理：
+**主要資料：**
+
+    - 公司財務比率：TEJ 抓取
+    - 訂閱清單：Fugle 提供
+    - 瀏覽紀錄：Fugle 提供
+    
+資料處理：[資料處理程式及簡介](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/Data_processing)
+（處理過後的資料最後並非全部都有使用）
+
+處理後的資料有使用：
+[產業比例](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/Data_processing#2產業比例判斷使用者較常接觸的公司產業為何)、
+[股票共現](https://github.com/jiaying777/E.SUN_Fugle_project/tree/master/Data_processing#5股票共現關係被同一個使用者訂閱或是瀏覽)
+
+處理後沒使用的資料：
+
+
 
 >[回目錄](#玉山證卷-fugleTrade-投資信鴿)
 
