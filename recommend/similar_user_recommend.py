@@ -1,3 +1,5 @@
+__author__ = "chia-ying wu"
+
 import pandas as pd
 import numpy as np
 from random import sample
