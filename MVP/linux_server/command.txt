@@ -1,0 +1,10 @@
+ssh -i fintech_key.pem ec2-user@ec2-34-207-162-174.compute-1.amazonaws.com
+ssh -i <your key file> <user-name>@<Public DNS (IPv4) for instances>
+
+設定排程:
+crontab -e
+0 */2 * * * cd /home/ec2-user/chatbot && bash run_main.sh
+:wq
+
+查看排程:
+crontab -l 

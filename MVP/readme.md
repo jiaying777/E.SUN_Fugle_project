@@ -11,7 +11,7 @@
 這邊我們以各股票的四個長期指標 (*CAPM_Beta*、*本益比*、*殖利率*、*股價淨值比*) 作為該股票的一個數值上的特徵向量。另外我們還使用用戶的數位足跡(訂閱紀錄&瀏覽紀錄)，將所有看過的股票轉換為該用戶的一個特徵向量，也就是說我們可以依造用戶看了哪些股票，並依造那些股票的特徵計算屬於該客戶的特徵向量，並利用此向量與所有股票計算距離，取其最近的幾檔股票最推播。
 
 ## 數值介紹
-- CAPM_Beta: ㄅ
+- CAPM_Beta: 
 - 本益比
 - 殖利率
 - 股價淨值比
@@ -31,7 +31,10 @@
 ## 相關網站
 - [參考網站](https://medium.com/@zaoldyeck/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%80%8E%E9%BA%BC%E6%89%93%E9%80%A0-telegram-bot-a7b539c3402a)
 - [telegram api](https://core.telegram.org/bots/api)
-
+## 需求
+- pip install telegram
+- pip install --upgrade python-telegram-bot
+- 
 ## Step 1 : 申請 telegram chatbot 
 這個 part 主要以建立新的 chatbot 為主，設定的化其實蠻人性化的，就自己研究吧。 
 1. 加入 BotFather 好友後，它會親切地問候，並告訴你他能為你提供什麼服務。
@@ -45,11 +48,11 @@
 
 ## Step 2: 建立 ngrok (這個部分程式已經自動化)
 1. 申請 bot ，\newbot -> bot 的名稱
-2. [下載 ngrok](https://ngrok.com/)，丟到此資料夾
+2. 下載 ngrok，丟到 fugle_telegram_chatbot 資料夾
 3. ngrok 認證帳號 (要先申請帳號)
     - 直接輸入: ngrok authtoken 1bkz30d7rjlKZHyBaxVDZeP9pmV_25LymVhvdzn7fhzf26FuN
 4. cd 到 fugle_telegram_chatbot ，輸入 ngrok http 5000
 5. 在同個目錄底下建立 `config.ini` : WEBHOOK_URL = ngrok 啟動後的 網址, ACCESS_TOKEN = 你的 telegram bot api 
 6. 執行程式建立 server 
-7. 加入機器人好友 [fintech](http://t.me/fintechfugle_bot)
+7. 加入機器人好友 [fintech](http://t.me/myfugle_bot)
 

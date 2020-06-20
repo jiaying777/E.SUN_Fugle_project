@@ -11,13 +11,14 @@ import configparser
 from pyngrok import ngrok
 
 class Agent:
-    def run_ngrok(self, path:str, port:int = 5000):
+    def run_ngrok(self, config, path:str, port:int = 5000):
         ngrok.DEFAULT_NGROK_PATH = path
 
         if len(ngrok.get_tunnels())!=0:
             ngrok.kill()
 
         # Open a ngrok tunnel to the dev server
+        ngrok.set_auth_token(config['NGROK']['ngrok_TOKEN'])
         public_url = ngrok.connect(port)
         public_url = public_url.replace('http:','https:')
 

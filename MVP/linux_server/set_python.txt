@@ -1,0 +1,5 @@
+sudo yum update
+sudo yum install -y python3
+sudo yum install tmux
+python3 get-pip.py
+python3 -m pip install -r chatbot/requirements.txt
