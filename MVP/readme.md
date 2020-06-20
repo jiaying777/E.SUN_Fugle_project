@@ -52,10 +52,15 @@
 ## Step 2: 建立 ngrok (這個部分程式已經自動化)
 1. 申請 bot ，\newbot -> bot 的名稱
 2. 下載 ngrok，丟到 fugle_telegram_chatbot 資料夾
-3. ngrok 認證帳號 (要先申請帳號)
-    - 直接輸入: ngrok authtoken 1bkz30d7rjlKZHyBaxVDZeP9pmV_25LymVhvdzn7fhzf26FuN
-4. cd 到 fugle_telegram_chatbot ，輸入 ngrok http 5000
-5. 在同個目錄底下建立 `config.ini` : WEBHOOK_URL = ngrok 啟動後的 網址, ACCESS_TOKEN = 你的 telegram bot api 
+3. ngrok 認證帳號 (要先申請帳號)，直接輸入: 
+    ```
+    ngrok authtoken [your token]
+    ```
+4. cd 到 fugle_telegram_chatbot ，輸入:
+    ```
+    ngrok http 5000
+    ```
+5. 在同個目錄底下建立 `config.ini` 
 6. 執行程式建立 server 
 7. 加入機器人好友 [fintech](http://t.me/myfugle_bot)
 
