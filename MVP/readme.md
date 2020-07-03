@@ -62,5 +62,6 @@
     ```
 5. 在同個目錄底下建立 `config.ini` 
 6. 執行程式建立 server 
-7. 加入機器人好友 [fintech](http://t.me/myfugle_bot)
+7. 加入機器人好友 
+
 
